@@ -1,0 +1,17 @@
+.image-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px,1fr));
+    grid-gap:  25px;
+    grid-auto-rows: 180px;
+}
+
+.image-list img {
+    width: 200px;
+}
+.segment {
+    text-align: center;
+}
+.compact-menu {
+    text-align: center;
+    
+}
