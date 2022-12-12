@@ -2,7 +2,6 @@ import React from "react";
 
 const SearchBar=({onFormSubmit, searchTerm, setSearchTerm}) => {
     
-
     const onSubmitHandler=(e) => {
         e.preventDefault()
         

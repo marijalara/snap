@@ -8,7 +8,7 @@ const ImagesList=({images}) => {
         return <ImageCard key={image.id} image={image}/>
     })
     return(
-        <div className="image-list">{list}</div>
+        <div className="image-list zoom">{list}</div>
     )
 }
 

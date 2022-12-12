@@ -3,8 +3,8 @@
     grid-template-columns: repeat(4, minmax(200px,1fr));
     grid-gap:  25px;
     grid-auto-rows: 180px;
+    
 }
-
 .image-list img {
     width: 200px;
 }
@@ -13,5 +13,9 @@
 }
 .compact-menu {
     text-align: center;
-    
+}
+.zoom div:hover {
+    transition:   all 0.7s;
+    transform: scale(1.4);
+    cursor: zoom-in;
 }
