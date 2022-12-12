@@ -8,7 +8,8 @@ const ImageCard=({image}) => {
     useEffect(() => {
         imageRef.current.addEventListener('load', setSpans(() => {
             const height=imageRef.current.clientHeight
-            const spans=Math.ceil(height/ 10)  
+            const spans=Math.ceil(height/ 10) 
+            setSpans(spans) 
         }))
     },[spans])
   
