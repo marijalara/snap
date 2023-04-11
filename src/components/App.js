@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom";
+import { Router, Redirect, Route, Switch} from "react-router-dom";
 import Header from "./Header";
 import Mountain from "../route/Mountain";
 import Beaches from "../route/Beaches";
@@ -10,7 +10,6 @@ import Search from "./Search";
 
 const App=({path}) => {
     const [searchTerm, setSearchTerm]=useState('')
-    //props.match.params.searchInput
 
     return(
         <div className="ui container">
@@ -24,7 +23,7 @@ const App=({path}) => {
             <Route path="/birds"  component={Birds} />
             <Route path="/food"  component={Food} />
             <Route path="/search/:searchInput" component={(props)=>( 
-                <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+                <Search searchTerm={props.match.params.searchInput} setSearchTerm={setSearchTerm}/>
             )}
             />
             </Switch>

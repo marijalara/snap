@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-
-
 const Body=({onFormSubmit}) => {
     const [showImages, setShowImages]=useState('')
 
-   
     const onClickHandler=() => {
         setShowImages(showImages)
         onFormSubmit('mountain')

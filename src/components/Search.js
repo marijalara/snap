@@ -1,14 +1,11 @@
-import React from "react";
+// import React from "react";
 
-
-
-const Search=({searchTerm}) => {
-    
-    //searchTerm=match.params.searchInput
-    return(
-        <div>
-            <h2>{searchTerm} pictures</h2>
-        </div>
-    )
-}
-export default Search
+// const Search=({ defaultSearchTerm}) => {
+//     console.log(defaultSearchTerm)
+//     return(
+//         <div>
+//             <h2>{defaultSearchTerm} pictures</h2>
+//         </div>
+//     )
+// }
+// export default Search

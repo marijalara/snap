@@ -1,12 +1,10 @@
 import React from "react";
 import Search from "../components/Search";
 
-const Mountain=() => {
-
+const Mountain=(searchTerm) => {
     return(
         <div>
-            <h1>jifigvjfi</h1>
-            
+            <Search searchTerm={searchTerm}/>
         </div>
     )
 }

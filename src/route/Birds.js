@@ -1,12 +1,8 @@
 import React from "react";
 
-
-
 const Birds=() => {
     return(
-        <div>Birds pictures
-            
-        </div>
+        <div>Birds pictures</div>
     )
 }
 
