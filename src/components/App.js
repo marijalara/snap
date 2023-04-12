@@ -6,7 +6,6 @@ import Beaches from "../route/Beaches";
 import Birds from "../route/Birds";
 import Food from "../route/Food";
 import history from "../history";
-import Search from "./Search";
 
 const App=({path}) => {
     const [searchTerm, setSearchTerm]=useState('')
@@ -22,10 +21,6 @@ const App=({path}) => {
             <Route path="/beaches"  component={Beaches} searchTerm={searchTerm}/>
             <Route path="/birds"  component={Birds} />
             <Route path="/food"  component={Food} />
-            <Route path="/search/:searchInput" component={(props)=>( 
-                <Search searchTerm={props.match.params.searchInput} setSearchTerm={setSearchTerm}/>
-            )}
-            />
             </Switch>
             </div>
             </Router>

@@ -1,10 +1,9 @@
 import React from "react";
-import Search from "../components/Search";
 
-const Mountain=(searchTerm) => {
+const Mountain=() => {
     return(
         <div>
-            <Search searchTerm={searchTerm}/>
+            Mountain
         </div>
     )
 }

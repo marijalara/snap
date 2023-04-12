@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+Snap in React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Goal
 
-## Available Scripts
+The goal is to created snap application where can search some photos. 
 
-In the project directory, you can run:
+npm start
 
-### `npm start`
+I created react app with name snap and started my project with npm start.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I created new folder componets where I created App file where I had state for searchTerm with default value of empty marks and that state added as props in the child componet. I also here created Router with all Route which had to show pictures od mountain, beaches, birds and food.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I created Header file where I had title for this project and here I had state images and search=useImages with default value od array. I created SearchBar where I had form tag-for that I created onSubmitHandler function with some code and had input field with value and onChange- for that I used arrow function with some code. In this file I also had button with onClick-for that I created onClickHandler function with some code, that button used icon. This file I imported in Header file.
 
-### `npm test`
+I created Body file where I had Link for mountain, beach, food and birds, they had to show us pictures. Inside that link I had buttons for every button I created different onClick function with different code which should show images when clicked on them. This file I imported in Header file. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I created ImagesList file where I had to show pictures, for that I used map statement and I created ImageCard file with state spans with default value od zero and here I also created image ref=use ref and that I used in useEffect where I decided to show ten pictures. That file I imported in Header file.
 
-### `npm run build`
+I created useImages file where I had state images with default value of empty array, and here I did fetch api using unsplash-for that I created new folder api with unsplash file where I had basic url headers and authorization. This file I imported in Header file.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I also created new folder route where I had file for Beaches, Birds, Mountain and Food.
+I created imageList.css for stayling this application. 
